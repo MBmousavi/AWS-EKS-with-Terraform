@@ -1,0 +1,13 @@
+region           = "eu-central-1"
+profile          = "MyProfile"
+ecr_name         = "Myecr"
+db_name          = "database"
+db_username      = "db_user"
+cidr             = "10.0.0.0/16"
+private_subnets  = ["10.0.1.0/24", "10.0.2.0/24"]
+intra_subnets    = ["10.0.11.0/24", "10.0.12.0/24"]
+public_subnets   = ["10.0.101.0/24", "10.0.102.0/24"]
+database_subnets = ["10.0.21.0/24", "10.0.22.0/24"]
+cluster_name     = "terraform"
+domain_name      = "MyDomian.xyz"
+s3_bucket        = "my-bucket-eks"

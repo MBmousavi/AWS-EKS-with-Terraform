@@ -13,11 +13,11 @@ AWS's official DNS service was used to host DNS records.
 AWS ACM was used to generate SSL certificates.
 SSL termination is handled outside the EKS cluster, at the Application Load Balancer (ALB) layer.
 
-### 5- AWS EKS (Elastic Kubernetes Service):
+### 4- AWS EKS (Elastic Kubernetes Service):
 A Terraform module was utilized to set up the EKS cluster.
 Additional configurations include integration of CSI drivers for S3, EBS, and EFS storage.
 
-### 6- User and Permissions:
+### 5- User and Permissions:
 IAM roles and policies were defined to grant EKS nodes access to EBS, EFS, and S3 services.
 
 A GitHub user was created with permissions to:
@@ -26,6 +26,6 @@ Push container images to AWS ECR.
 
 Update deployments within the EKS cluster.
 
-### 7- AWS RDS (Relational Database Service):
+### 6- AWS RDS (Relational Database Service):
 A simple PostgreSQL database was provisioned using RDS.
 Database credentials are securely managed via AWS KMS (Key Management Service).

@@ -29,3 +29,6 @@ Update deployments within the EKS cluster.
 ### 6- AWS RDS (Relational Database Service):
 A simple PostgreSQL database was provisioned using RDS.
 Database credentials are securely managed via AWS KMS (Key Management Service).
+
+### 7- ALB and Ingress:
+In the `ingress-alb.yml` you see the yaml file for creating the ingress, when you apply it, it creates a ALB in the AWS.
